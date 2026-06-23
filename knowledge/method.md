@@ -34,8 +34,16 @@ Không đoán bừa: **chờ giá tới zone rồi mới quyết định.**
 - Chưa có **MSS** thì không vào → `no_mss`
 - Tránh **FOMO** lúc NY open → `fomo`
 
-## (Bạn bổ sung — để AI áp đúng luật của bạn)
-- Risk mỗi lệnh: ____ %
-- RR tối thiểu nhận lệnh: ____
-- Khung vào lệnh ưu tiên: ____
-- Khung giờ giao dịch trong ngày: ____
+## Risk & quản lý lệnh (ĐỀ XUẤT — sửa cho khớp bạn)
+- Risk mỗi lệnh: **1%** tài khoản (giảm còn 0.5% khi tín hiệu yếu / ngược HTF bias).
+- RR tối thiểu nhận lệnh: **1:2**. Scalp tối thiểu **1:1.5**.
+- Chốt lời từng phần: TP1 ~1:1 (dời SL về BE) → TP2 1:2 → để runner nếu thuận HTF.
+- Tối đa lệnh thua liên tiếp/ngày: **2** → nghỉ, tránh revenge_trade.
+- Khung: bias D1/H4/H1 · đánh POI H4/H1 · vào lệnh M5 (xác nhận cấu trúc M15).
+
+## Khung giờ ưu tiên (giờ VN, UTC+7 — ĐỀ XUẤT)
+- **London open:** ~14:00–17:00 — phiên chính, ưu tiên cao nhất.
+- **NY open / overlap London–NY:** ~19:00–23:00 — biến động mạnh, dễ FOMO, cẩn thận.
+- **Asia:** ~07:00–14:00 — thường range; chủ yếu quan sát + đánh dấu thanh khoản (asia_high / asia_low).
+
+> Các con số trên là mặc định hợp lý cho SMC, **KHÔNG phải luật gốc của bạn** — sửa lại cho đúng phong cách & kích thước tài khoản của bạn.
