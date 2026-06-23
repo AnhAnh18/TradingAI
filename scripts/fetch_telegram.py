@@ -34,7 +34,11 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parent.parent
-INBOX = ROOT / "inbox"
+# Cho phép đổi thư mục lưu qua env INBOX_DIR (cloud dùng 'cloud_inbox' - được track git)
+_inbox_env = os.environ.get("INBOX_DIR", "").strip()
+INBOX = Path(_inbox_env) if _inbox_env else (ROOT / "inbox")
+if not INBOX.is_absolute():
+    INBOX = ROOT / INBOX
 SECRETS = ROOT / "secrets"
 OFFSET_FILE = INBOX / ".offset"
 API = "https://api.telegram.org"

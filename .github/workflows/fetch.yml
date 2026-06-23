@@ -1,0 +1,37 @@
+name: Fetch Telegram plans
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'      # mỗi 15' (giờ UTC; GitHub cron hay trễ 10-30')
+  workflow_dispatch: {}          # cho phép bấm chạy tay để test
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-telegram          # tránh 2 lần chạy chồng nhau giành offset
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Kéo tin từ bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          INBOX_DIR: cloud_inbox
+        run: python3 scripts/fetch_telegram.py
+
+      - name: Commit nếu có plan mới
+        run: |
+          if [ -n "$(git status --porcelain cloud_inbox)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add cloud_inbox
+            git commit -m "cloud: capture telegram plans [skip ci]"
+            git push
+          else
+            echo "Không có plan mới."
+          fi
