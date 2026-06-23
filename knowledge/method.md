@@ -35,7 +35,7 @@ Không đoán bừa: **chờ giá tới zone rồi mới quyết định.**
 - Tránh **FOMO** lúc NY open → `fomo`
 
 ## Risk & quản lý lệnh (ĐỀ XUẤT — sửa cho khớp bạn)
-- Risk mỗi lệnh: **1%** tài khoản (giảm còn 0.5% khi tín hiệu yếu / ngược HTF bias).
+- Risk mỗi lệnh: **5%** tài khoản (giảm còn 2% khi tín hiệu yếu / ngược HTF bias).
 - RR tối thiểu nhận lệnh: **1:2**. Scalp tối thiểu **1:1.5**.
 - Chốt lời từng phần: TP1 ~1:1 (dời SL về BE) → TP2 1:2 → để runner nếu thuận HTF.
 - Tối đa lệnh thua liên tiếp/ngày: **2** → nghỉ, tránh revenge_trade.

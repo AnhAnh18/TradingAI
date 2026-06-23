@@ -1,0 +1,21 @@
+# Ngày 23-6: CHỈ QUAN SÁT, không vào lệnh nào.
+date: 2026-06-23
+session: london
+symbol: XAUUSD
+
+price_action:
+  note: "Giá theo HTF bearish, các vùng phản ứng đúng kỳ vọng của plan -> nhìn là win."
+  reached_zone: z3
+  mss: bearish
+
+entry:
+  model: null
+  zone: null
+  direction: null
+
+decision: no_trade
+result: no_trade        # không tính vào winrate (đúng)
+rr: null
+
+mistakes: []
+note: "Plan đúng/win nhưng chỉ đứng nhìn, không vào. Ghi để theo dõi 'setup đúng mà bỏ lỡ'."
