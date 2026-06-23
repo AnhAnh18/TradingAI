@@ -3,6 +3,10 @@
 # Chỉ dùng giá trị trong knowledge/vocab.md
 date: 2026-06-23
 symbol: XAUUSD
+plan_issued: "10:00"          # giờ VN plan được cấp (nguồn ngoài)
+logged: "12:00"              # giờ VN đưa vào hệ thống
+# Nếu 'logged' trễ hơn 'plan_issued' nhiều: gửi kèm 1 chart HIỆN TẠI để AI đánh dấu
+# zone nào đã phản ứng/đã chạy và zone nào còn 'live'.
 regime: trending_down          # H4 vẫn trong xu hướng giảm từ vùng ~4575
 
 htf_bias:

@@ -41,9 +41,12 @@ Không đoán bừa: **chờ giá tới zone rồi mới quyết định.**
 - Tối đa lệnh thua liên tiếp/ngày: **2** → nghỉ, tránh revenge_trade.
 - Khung: bias D1/H4/H1 · đánh POI H4/H1 · vào lệnh M5 (xác nhận cấu trúc M15).
 
-## Khung giờ ưu tiên (giờ VN, UTC+7 — ĐỀ XUẤT)
-- **London open:** ~14:00–17:00 — phiên chính, ưu tiên cao nhất.
-- **NY open / overlap London–NY:** ~19:00–23:00 — biến động mạnh, dễ FOMO, cẩn thận.
-- **Asia:** ~07:00–14:00 — thường range; chủ yếu quan sát + đánh dấu thanh khoản (asia_high / asia_low).
+## Khung giờ ưu tiên (giờ VN GMT+7 — mùa hè/DST, đúng cho hiện tại 06/2026)
+- **London killzone:** ~14:00–17:00 — phiên chính, ưu tiên cao nhất.
+- **NY open / overlap London–NY:** ~19:00–23:00 — biến động mạnh nhất, dễ FOMO.
+- **Asia:** ~06:00–14:00 — thường range; chủ yếu quan sát + đánh dấu thanh khoản (asia_high / asia_low).
+
+> ⚠ Đây là **giờ mùa hè (DST)**. Khoảng cuối tháng 10 → đầu tháng 3 (London/NY lùi đồng hồ),
+> tất cả mốc trên **+1 tiếng** theo giờ VN (vd London killzone thành ~15:00–18:00).
 
 > Các con số trên là mặc định hợp lý cho SMC, **KHÔNG phải luật gốc của bạn** — sửa lại cho đúng phong cách & kích thước tài khoản của bạn.
