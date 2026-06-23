@@ -17,6 +17,10 @@ import sys
 from pathlib import Path
 from collections import Counter, defaultdict
 
+# Windows console mặc định cp1252 -> ép UTF-8 để in được tiếng Việt
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 try:
     import yaml
 except ImportError:
