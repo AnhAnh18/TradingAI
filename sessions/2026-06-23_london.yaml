@@ -1,0 +1,22 @@
+# VÍ DỤ HOÁ từ mô tả của bạn — sửa lại cho khớp lệnh thật.
+date: 2026-06-23
+session: london
+symbol: XAUUSD
+
+price_action:
+  sweep: asia_high
+  reached_zone: z1
+  reaction: rejection
+  mss: bearish
+
+entry:
+  model: ob_retest
+  zone: z1
+  direction: sell
+
+decision: sell
+result: tp2
+rr: 2.0
+
+mistakes: []
+note: "Quét asia high -> MSS giảm M5 -> sell tại OB. Khớp kịch bản 'secondary' của plan."

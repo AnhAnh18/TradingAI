@@ -1,0 +1,22 @@
+# VÍ DỤ HOÁ từ mô tả của bạn — sửa lại cho khớp lệnh thật.
+date: 2026-06-23
+session: ny_am
+symbol: XAUUSD
+
+price_action:
+  sweep: session_low
+  reached_zone: z3
+  reaction: bullish_engulfing
+  mss: bullish
+
+entry:
+  model: sweep_reclaim
+  zone: z3
+  direction: buy
+
+decision: scalp_buy
+result: be
+rr: 0
+
+mistakes: []
+note: "Giá về demand 4090, engulfing tăng + MSS tăng M5 -> scalp buy, kết BE."

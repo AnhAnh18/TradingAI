@@ -1,0 +1,23 @@
+# Template phiên — copy thành sessions/YYYY-MM-DD_<session>.yaml rồi điền.
+# Chỉ dùng giá trị có trong knowledge/vocab.md. File bắt đầu bằng "_" bị analyze.py bỏ qua.
+date: 2026-06-23
+session: london          # asia | london | ny_am | ny_pm
+symbol: XAUUSD
+
+price_action:
+  sweep: null            # asia_high | pdl | equal_highs ... | null nếu không có
+  reached_zone: null     # id zone trong plan (vd z3) hoặc giá
+  reaction: null         # bullish_engulfing | rejection | none ...
+  mss: none              # bullish | bearish | none
+
+entry:
+  model: null            # ob_retest | fvg_fill | sweep_reclaim | breaker | range_fade
+  zone: null             # id zone
+  direction: null        # buy | sell
+
+decision: no_trade       # buy | sell | scalp_buy | scalp_sell | wait | no_trade
+result: no_trade         # tp1 | tp2 | tp3 | partial | be | sl | no_trade
+rr: null                 # số R thực tế, vd 2.4
+
+mistakes: []             # vd [entered_mid_range, fomo]
+note: ""

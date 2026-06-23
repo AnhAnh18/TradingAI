@@ -1,0 +1,59 @@
+# Daily Plan — XAUUSD
+# Nguồn: plan "lụm về" tham khảo, đối chiếu chart H4 / H1 / M5 ngày 23-6.
+# Chỉ dùng giá trị trong knowledge/vocab.md
+date: 2026-06-23
+symbol: XAUUSD
+regime: trending_down          # H4 vẫn trong xu hướng giảm từ vùng ~4575
+
+htf_bias:
+  d1: bearish
+  h4: bearish
+  h1: bearish
+
+important_zones:
+  - id: z1
+    price: 4180
+    type: supply
+    tf: h1
+    origin: range_high
+    strength: medium
+    note: "Hỗ trợ cũ gãy -> đảo vai kháng cự. Trùng vùng 4180-4200 (~4191.69)."
+
+  - id: z2
+    price: 4147
+    type: supply
+    tf: h1
+    origin: order_block
+    strength: weak
+    note: "Supply phụ trên đường giảm; kỳ vọng phản ứng yếu hơn z1."
+
+  - id: z3
+    price: 4090
+    type: demand
+    tf: h1
+    origin: swing_low
+    strength: medium
+    note: "Đáy nhịp giảm gần nhất. Giá đã test và bật lên ~4130 (xem sessions)."
+
+  - id: z4
+    price: 4010
+    type: demand
+    tf: h4
+    origin: swing_low + round_number
+    strength: strong
+    note: "Đáy lớn 11-6 (~4025-4050) + số tròn 4000. Demand HTF mạnh nhất."
+
+expectation:
+  primary: continue_down                          # theo HTF bias: z3 -> z4
+  secondary: retrace_into_supply_then_continue    # hồi lên z1/z2 rồi giảm tiếp
+
+invalidation:
+  note: "H1 đóng cửa trên 4180 + MSS tăng -> bias giảm tạm sai, đứng ngoài."
+
+avoid:
+  - entered_mid_range
+  - no_mss
+  - fomo
+
+# 'origin' & 'strength' do AI suy từ chart, KHÔNG phải số liệu gốc của plan.
+confidence: inferred_from_charts
