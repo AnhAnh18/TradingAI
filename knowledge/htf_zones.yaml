@@ -1,16 +1,77 @@
 # Bản đồ vùng khung lớn (HTF) — nguồn để biết cản M15 nào MẠNH (gốc HTF).
-# Cập nhật khi bạn gửi H4/D1 (thưa: hàng tuần, hoặc khi cấu trúc đổi).
-# Plan M15 hằng ngày sẽ đối chiếu với các vùng ở đây.
-updated: null            # ngày cập nhật gần nhất (điền khi seed bằng H4/D1)
-source_tf: [h4, d1]
+# Plan M15 hằng ngày đối chiếu với các vùng ở đây.
+updated: 2026-06-24
+source_tf: [w1, d1, h4]     # ảnh gửi 24-6 (giá hiện tại ~4085)
 
-zones: []                # sẽ điền khi bạn gửi H4 + D1
+# source: drawn = vẽ sẵn trên ảnh | ai_derived = mình suy từ price action (bạn review)
+# Giá XẤP XỈ — đọc từ ảnh.
+zones:
+  - id: D1-demand-major
+    low: 3980
+    high: 4080
+    type: demand
+    tf: d1
+    source: ai_derived
+    origin: swing_low + round_number + range_low
+    strength: strong
+    note: "Đáy lớn 11/6 (~4025-4050) + nền tích luỹ Dec2025 (~4000-4200) + số tròn 4000. Giá đang nằm TRÊN vùng này → giải thích cản 4010/4090 của plan."
 
-# Mẫu một vùng (band low-high vì cản là vùng, không phải 1 giá):
-#  - id: D1-demand-1
-#    low: 4000
-#    high: 4020
-#    type: demand         # supply | demand
-#    tf: d1               # d1 | h4
-#    origin: swing_low + round_number
-#    note: "đáy lớn 11-6 + số tròn 4000"
+  - id: H4-supply-4150
+    low: 4140
+    high: 4165
+    type: supply
+    tf: h4
+    source: ai_derived
+    origin: order_block
+    strength: medium
+    note: "Supply nhỏ H4 trên đường giảm → khớp cản 4147 của plan."
+
+  - id: H4-supply-4190
+    low: 4170
+    high: 4220
+    type: supply
+    tf: h4
+    source: ai_derived
+    origin: range_high
+    strength: medium
+    note: "Lower-high/tích luỹ gần nhất H4-D1 → khớp cản 4180 của plan."
+
+  - id: H4-supply-4340
+    low: 4330
+    high: 4365
+    type: supply
+    tf: h4
+    source: ai_derived
+    origin: swing_high
+    strength: medium
+    note: "Lower high 17/6 — kháng cự kế nếu hồi mạnh."
+
+  - id: D1-supply-4600
+    low: 4560
+    high: 4660
+    type: supply
+    tf: d1
+    source: ai_derived
+    origin: range_high
+    strength: medium
+    note: "Vùng đỉnh/consolidation tháng 5."
+
+  - id: W1-demand-1
+    low: 3180
+    high: 3280
+    type: demand
+    tf: w1
+    source: drawn
+    origin: range_low
+    strength: strong
+    note: "Vùng VẼ trên W1 (nền tích luỹ đầu 2025). Rất sâu — context nếu sập mạnh."
+
+  - id: W1-demand-2
+    low: 3050
+    high: 3180
+    type: demand
+    tf: w1
+    source: drawn
+    origin: range_low
+    strength: strong
+    note: "Vùng VẼ trên W1, ngay dưới zone trên."
