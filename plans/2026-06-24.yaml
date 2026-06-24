@@ -1,6 +1,6 @@
 # Daily Plan — XAUUSD — 24/06/2026
-# PLAN THẬT: chart 45m gửi 13:12 (canh buy 38-43). H1 sáng + bài PT 23/6 = bối cảnh tham khảo.
-# Đối chiếu knowledge/htf_zones.yaml
+# PLAN THẬT: chart 45m gửi 13:12. THIÊN SELL; vùng buy chỉ là vùng dễ phản ứng (scalp nảy).
+# H1 sáng + bài PT 23/6 = bối cảnh tham khảo. Đối chiếu knowledge/htf_zones.yaml
 date: 2026-06-24
 symbol: XAUUSD
 source_tf: m45
@@ -8,33 +8,34 @@ plan_issued: "2026-06-24 13:12"
 logged: "2026-06-24 13:30"
 regime: trending_down
 htf_bias: bearish
-plan_bias: buy                 # PLAN hôm nay nghiêng MUA (canh buy 38-43) — NGƯỢC HTF, xem my_view
+plan_bias: sell                # Vẫn THIÊN SELL. Vùng buy = vùng dễ PHẢN ỨNG (scalp), KHÔNG phải đảo chiều.
 
 important_zones:
   - id: r_4108
     low: 4105
     high: 4110
     type: supply
-    note: "Kháng cự trên (band tím)."
+    note: "Kháng cự trên (band tím) — vùng canh SELL."
   - id: p_4080
     low: 4078
     high: 4082
     type: supply
-    note: "Band trung gian ~4080 — mục tiêu nảy đầu tiên."
-  - id: buy_4040
+    note: "Band trung gian ~4080 — kháng cự/mục tiêu nảy."
+  - id: react_4040
     low: 4036
     high: 4044
     type: demand
-    note: "VÙNG BUY của plan (canh buy 38-43). Trùng D1 demand 4000-4060."
+    note: "Vùng dễ PHẢN ỨNG (scalp buy 38-43 nếu có xác nhận). Trùng D1 demand 4000-4060. Không phải hướng chính."
   - id: s_4010
     low: 4008
     high: 4012
     type: demand
-    note: "Đáy cụm demand (band tím dưới). Mất đây = gãy buy."
+    note: "Đáy cụm demand (band tím dưới). Mất đây = mở đường giảm tiếp."
 
-plan_setup:                    # theo plan tác giả
-  - "Canh BUY 4038-4043."
-  - "Kịch bản (đường chấm vàng): có thể QUÉT xuống ~4010 rồi mới bật lên 4080 -> 4108."
+plan_setup:                    # theo plan tác giả (THIÊN SELL)
+  - "Hướng chính: SELL theo xu hướng (canh từ 4080 / 4108)."
+  - "Vùng 4036-44 và 4010 = vùng dễ phản ứng -> chỉ scalp nảy CÓ xác nhận, không phải hướng chính."
+  - "Kịch bản (đường chấm vàng): có thể quét ~4010 rồi bật 4080 -> 4108 = nhịp hồi trong xu hướng giảm."
 
 reference_strategy:            # bài PT 23h 23/6 — chỉ tham khảo
   buy_limit: "4040-4091, SL 4010, TP 4198 -> 4280"
@@ -42,11 +43,10 @@ reference_strategy:            # bài PT 23h 23/6 — chỉ tham khảo
   caveat_from_source: "buy signal sai 2 lần tuần này (18,22/6); đà bán trung hạn mạnh"
 
 my_view:
-  - "Plan hôm nay nghiêng BUY, NGƯỢC bias HTF (đang giảm) -> đánh bắt nảy ngược xu hướng tại demand."
-  - "Vùng buy 4036-44 trùng D1 demand 4000-4060 -> bật là có cơ sở cấu trúc."
-  - "Kịch bản 'quét 4010 rồi bật' = sweep_reclaim, ĐÚNG bài (chờ quét + đảo) hơn buy mù. Chỉ buy khi có xác nhận M5/M15 sau khi chạm 4010-4040."
-  - "Mất 4010 dứt khoát (không reclaim) -> buy hỏng; dưới là air-pocket tới ~3200 (W1). SL đặt dưới 4010."
-  - "Mục tiêu nảy: 4080 -> 4108 (-> 4147 nếu khỏe)."
+  - "Bias THIÊN SELL (khớp HTF). Vùng buy 4040/4010 chỉ là nơi dễ có phản ứng để scalp nảy, KHÔNG phải tín hiệu đảo chiều."
+  - "Kèo thuận trend: canh SELL ở kháng cự (4080/4108, xa hơn 4147) khi có xác nhận."
+  - "Scalp buy ở 4036-44 / 4010 (nếu chơi) chỉ khi có sweep + MSS tăng M5/M15; SL dưới 4010; mục tiêu ngắn 4080. Hiểu rõ là bắt nảy ngược trend."
+  - "Mất 4010 dứt khoát -> giảm tiếp, dưới gần như trống tới ~3200 (W1)."
 
 unverifiable:
   - "Order flow / phân kỳ của bài PT — nguồn ngoài, không xác minh được."
