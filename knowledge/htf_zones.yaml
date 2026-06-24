@@ -2,19 +2,20 @@
 # Plan M15 hằng ngày đối chiếu với các vùng ở đây.
 updated: 2026-06-24
 source_tf: [w1, d1, h4]     # ảnh gửi 24-6 (giá hiện tại ~4085)
+htf_bias: bearish           # xu hướng lớn GIẢM → ưu tiên SELL; vùng buy chỉ scalp + cần xác nhận LTF
 
 # source: drawn = vẽ sẵn trên ảnh | ai_derived = mình suy từ price action (bạn review)
 # Giá XẤP XỈ — đọc từ ảnh.
 zones:
   - id: D1-demand-major
-    low: 3980
-    high: 4080
+    low: 4000
+    high: 4060
     type: demand
     tf: d1
     source: ai_derived
-    origin: swing_low + round_number + range_low
+    origin: swing_low + round_number
     strength: strong
-    note: "Đáy lớn 11/6 (~4025-4050) + nền tích luỹ Dec2025 (~4000-4200) + số tròn 4000. Giá đang nằm TRÊN vùng này → giải thích cản 4010/4090 của plan."
+    note: "Thu hẹp theo feedback. Lõi demand = đáy 11/6 (~4025-4055) + số tròn 4000. Khớp cản 4010. (4090 là demand nông hơn H1/M15, tách riêng.)"
 
   - id: H4-supply-4150
     low: 4140
@@ -57,21 +58,21 @@ zones:
     note: "Vùng đỉnh/consolidation tháng 5."
 
   - id: W1-demand-1
-    low: 3180
-    high: 3280
+    low: 3195
+    high: 3220
     type: demand
     tf: w1
     source: drawn
     origin: range_low
     strength: strong
-    note: "Vùng VẼ trên W1 (nền tích luỹ đầu 2025). Rất sâu — context nếu sập mạnh."
+    note: "Vùng VẼ trên W1 (range 1, nền tích luỹ đầu 2025). Sâu — context nếu sập mạnh."
 
   - id: W1-demand-2
-    low: 3050
-    high: 3180
+    low: 3090
+    high: 3130
     type: demand
     tf: w1
     source: drawn
     origin: range_low
     strength: strong
-    note: "Vùng VẼ trên W1, ngay dưới zone trên."
+    note: "Vùng VẼ trên W1 (range 2), ngay dưới range 1."
