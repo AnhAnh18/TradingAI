@@ -1,0 +1,16 @@
+# Bản đồ vùng khung lớn (HTF) — nguồn để biết cản M15 nào MẠNH (gốc HTF).
+# Cập nhật khi bạn gửi H4/D1 (thưa: hàng tuần, hoặc khi cấu trúc đổi).
+# Plan M15 hằng ngày sẽ đối chiếu với các vùng ở đây.
+updated: null            # ngày cập nhật gần nhất (điền khi seed bằng H4/D1)
+source_tf: [h4, d1]
+
+zones: []                # sẽ điền khi bạn gửi H4 + D1
+
+# Mẫu một vùng (band low-high vì cản là vùng, không phải 1 giá):
+#  - id: D1-demand-1
+#    low: 4000
+#    high: 4020
+#    type: demand         # supply | demand
+#    tf: d1               # d1 | h4
+#    origin: swing_low + round_number
+#    note: "đáy lớn 11-6 + số tròn 4000"

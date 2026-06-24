@@ -22,7 +22,9 @@ Hệ thống ghi chép giao dịch có cấu trúc cho XAUUSD (SMC + Volume Prof
 | `sessions/` | Nhật ký từng phiên (có kết quả để tính thống kê) |
 | `lessons/lessons.md` | Bài học, append-only |
 | `scripts/analyze.py` | Tính winrate / RR / breakdown từ `sessions/` |
-| `scripts/fetch_telegram.py` | Kéo plan bạn forward vào bot Telegram riêng → `inbox/` (xem docstring để cài) |
+| `knowledge/htf_zones.yaml` | Bản đồ vùng khung lớn (D1/H4) — đối chiếu để biết cản M15 nào mạnh |
+| `scripts/fetch_telegram.py` | Kéo plan từ bot Telegram → `cloud_inbox/` (cloud) hoặc `inbox/` (local) |
+| `.github/workflows/fetch.yml` | Cloud cron: tự kéo plan mỗi ~15' (không cần treo máy) |
 
 ## Phân vai: SỐ vs DIỄN GIẢI (quan trọng)
 
