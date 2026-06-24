@@ -1,0 +1,43 @@
+# Daily Plan — XAUUSD — 24/06/2026
+# Nguồn: bài phân tích tham khảo (viết 23h 23/6) + ảnh H1 (8h34 24/6, có vùng bạn vẽ)
+#        + đối chiếu knowledge/htf_zones.yaml
+date: 2026-06-24
+symbol: XAUUSD
+plan_issued: "2026-06-23 23:00"   # thời điểm bài PT
+logged: "2026-06-24 08:40"
+regime: trending_down
+htf_bias: bearish                 # theo htf_zones.yaml -> ưu tiên SELL
+
+important_zones:
+  - id: demand_cluster
+    low: 4000
+    high: 4090
+    type: demand
+    note: "Hợp lưu: D1 demand 4000-4060 (htf_zones) + vùng H1 bạn vẽ ~4070-4090 + key 4040 của bài PT. Cụm demand chính, giá đang test."
+  - id: s1
+    price: 4147
+    type: supply
+    note: "H4-supply-4150 — kháng cự gần nhất, mục tiêu nếu nảy."
+  - id: s2
+    low: 4170
+    high: 4220
+    type: supply
+    note: "H4-supply-4190 — cản kế (trùng TP1 ~4198 của bài PT)."
+
+reference_strategy:               # CỦA BÀI PT THAM KHẢO — KHÔNG phải khuyến nghị của mình
+  source: external_analysis
+  buy_limit: "4040-4091, SL 4010, TP 4198 -> 4280"
+  sell_stop: "4036 -> 3950 -> 3900, SL 4105"
+  signal: "dòng tiền chuyển sang mua + phân kỳ tăng tại 4040"
+  caveat_from_source: "tín hiệu gom hàng đã sai 2 lần tuần này (18/6, 22/6); đà bán trung hạn vẫn mạnh"
+
+my_view:
+  - "Có hợp lưu demand thật quanh 4000-4090 -> nảy là CÓ cơ sở."
+  - "NHƯNG bias HTF giảm + buy signal sai 2 lần -> BUY là ngược xu hướng, chỉ scalp, PHẢI có xác nhận M5/M15 (sweep+MSS). Buy limit thụ động 4040 không xác nhận = trái luật no_mss của bạn."
+  - "Thuận xu hướng hơn: canh SELL từ 4147 / 4170-4220."
+  - "Cảnh báo: thủng 4000 thì DƯỚI gần như trống tới ~3200 (W1) -> giảm có thể nhanh & sâu; sell breakout hợp lý nhưng coi chừng false break."
+
+unverifiable:
+  - "Order flow / dòng tiền / phân kỳ trong bài PT đến từ nguồn ngoài — mình KHÔNG thấy/xác minh được."
+
+confidence: synthesized_from_reference_and_htf
