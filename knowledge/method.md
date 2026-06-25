@@ -34,6 +34,13 @@ Không đoán bừa: **chờ giá tới zone rồi mới quyết định.**
 - Chưa có **MSS** thì không vào → `no_mss`
 - Tránh **FOMO** lúc NY open → `fomo`
 
+## Setup: Broken Bullish Engulfing → kháng cự (breaker)  [ĐANG THỬ NGHIỆM]
+- Trên **H2**: tìm **cụm nến Engulfing tăng** (gốc cú đẩy lên = bullish OB).
+- Cụm đó **bị gãy** (giá phá xuống dưới) → đảo vai thành **KHÁNG CỰ** (breaker).
+- Vùng kháng cự = **cây nến đỏ** của cụm (2 line = low/high của nến đó).
+- Vùng **quá rộng** → tách 2 vùng con, canh phản ứng từng mức (vd 4046 & 4061).
+- Đánh dấu `broken_engulfing` trong plan/session để theo dõi winrate RIÊNG cho setup này.
+
 ## Risk & quản lý lệnh (ĐỀ XUẤT — sửa cho khớp bạn)
 - Risk mỗi lệnh: **5%** tài khoản (giảm còn 2% khi tín hiệu yếu / ngược HTF bias).
 - RR tối thiểu nhận lệnh: **1:2**. Scalp tối thiểu **1:1.5**.

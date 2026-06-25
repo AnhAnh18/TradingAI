@@ -24,7 +24,8 @@
 `swing_high` · `swing_low` · `order_block` · `fvg` ·
 `volume_poc` · `value_area_high` · `value_area_low` ·
 `range_high` · `range_low` · `round_number` ·
-`previous_day_high` · `previous_day_low`
+`previous_day_high` · `previous_day_low` ·
+`engulfing` · `broken_engulfing`
 > Ghép nhiều yếu tố bằng " + ", vd: `swing_low + round_number`.
 
 ## zone.strength

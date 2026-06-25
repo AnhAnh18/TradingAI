@@ -1,0 +1,45 @@
+# Daily Plan — XAUUSD — 25/06/2026
+# Plan gửi 21h (chart 15m, giá ~4017). Đối chiếu htf_zones + setup broken-EG từ 24/6.
+date: 2026-06-25
+symbol: XAUUSD
+source_tf: m15
+plan_issued: "2026-06-25 21:00"
+logged: "2026-06-25 21:30"
+regime: trending_down
+htf_bias: bearish
+plan_bias: sell                 # vùng buy = reaction zone (xem reading-plans memory)
+
+important_zones:
+  - id: r_4083
+    price: 4083
+    type: supply
+    note: "Line trên cùng."
+  - id: r_4060
+    low: 4055
+    high: 4062
+    type: supply
+    origin: broken_engulfing
+    note: "Trùng EG-resistance line 2 (4061) từ setup broken-EG H2 ngày 24/6."
+  - id: r_4040
+    low: 4035
+    high: 4045
+    type: supply
+    origin: broken_engulfing
+    note: "Trùng EG-resistance line 1 (4046) + vùng 4040 đã phản ứng 2 lần hôm 24/6 -> giờ là kháng cự."
+  - id: react_3985
+    low: 3980
+    high: 3988
+    type: demand
+    note: "Vùng dễ phản ứng (giá đang bật từ đây). Scalp only, cần xác nhận."
+  - id: s_3950
+    low: 3945
+    high: 3952
+    type: demand
+    note: "Hỗ trợ dưới."
+
+my_view:
+  - "Bias vẫn SELL. Giá 4017 kẹp giữa kháng cự 4040/4060 (cụm EG-breaker) và hỗ trợ 3985/3950."
+  - "Setup EG đang đúng: bật 4040 (24/6) -> chạm ~4046 -> bị đẩy về ~3980. Vùng 4040-4060 hành xử như kháng cự (n=1)."
+  - "Thuận trend: canh SELL khi giá hồi lên 4040/4060 CÓ xác nhận. Buy 3985/3950 chỉ scalp có xác nhận."
+
+confidence: from_actual_plan_15m + htf_cross_ref
