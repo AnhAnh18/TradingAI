@@ -83,7 +83,9 @@ def breakdown(traded, key, label):
 
 def main():
     rows = load_sessions()
-    traded = [r for r in rows if r.get("result") not in SKIP_RESULT]
+    excluded = [r for r in rows if r.get("exclude_from_stats")]
+    traded = [r for r in rows
+              if r.get("result") not in SKIP_RESULT and not r.get("exclude_from_stats")]
     n = len(traded)
 
     print("=" * 52)
@@ -91,6 +93,8 @@ def main():
     print("=" * 52)
     print(f"Tổng phiên ghi nhận : {len(rows)}")
     print(f"Tổng lệnh có kết quả : {n}")
+    if excluded:
+        print(f"(Bỏ khỏi thống kê — lệnh test: {len(excluded)})")
 
     if n == 0:
         print("\nChưa có lệnh nào để tính. Hãy điền vào sessions/.")

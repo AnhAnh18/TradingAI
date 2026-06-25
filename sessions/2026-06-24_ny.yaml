@@ -14,8 +14,9 @@ entry:
   direction: buy
 
 decision: scalp_buy
-result: tp1                      # THẮNG (scalp); R chưa rõ -> điền 'rr' khi có
+result: tp1                      # THẮNG (scalp)
 rr: null
+exclude_from_stats: true        # coi như TEST — chưa hiểu rõ entry, KHÔNG tính winrate (theo ý user 25/6)
 
 mistakes: []
 note: "Counter-trend scalp (bias HTF sell). Vào lần 2 sau khi thấy lần 1 phản ứng -> kỷ luật, không FOMO lần 1. Khựng khi đụng kháng cự 4046 (EG-breaker)."
