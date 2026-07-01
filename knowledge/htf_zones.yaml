@@ -14,8 +14,9 @@ zones:
     tf: d1
     source: ai_derived
     origin: swing_low + round_number
-    strength: strong
-    note: "Thu hẹp theo feedback. Lõi demand = đáy 11/6 (~4025-4055) + số tròn 4000. Khớp cản 4010. (4090 là demand nông hơn H1/M15, tách riêng.)"
+    strength: weak                # HẠ từ strong: đã bị phá thủng 26/6-1/7
+    note: "Thu hẹp theo feedback. Lõi demand = đáy 11/6 (~4025-4055) + số tròn 4000. Khớp cản 4010. (4090 là demand nông hơn H1/M15, tách riêng.)
+      CẬP NHẬT (1/7): giá đã PHÁ THỦNG xuống ~3971, sau đó hồi lên ~4026. Zone này không còn 'strong' — coi là đã test/breach, demand kế tiếp là ~3958-3962 và ~3930-3936 (xem plan 2026-07-01)."
 
   - id: H4-supply-4150
     low: 4140

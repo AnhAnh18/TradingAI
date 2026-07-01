@@ -43,3 +43,11 @@ my_view:
   - "Thuận trend: canh SELL khi giá hồi lên 4040/4060 CÓ xác nhận. Buy 3985/3950 chỉ scalp có xác nhận."
 
 confidence: from_actual_plan_15m + htf_cross_ref
+
+# OUTCOME — cập nhật từ tin nhắn tele (quan sát, KHÔNG chắc có vào lệnh hay không)
+outcome:
+  - "25/6 23:48 — cụm EG: giá lên hơn 4044 rồi quay đầu (đã kẻ line 4046). User nhận xét: nên coi 4044-4046 là 1 ZONE chứ không phải 1 giá cứng — cần review thêm."
+  - "Sau đó — 'vùng 4046 done', chuyển sang chờ vùng 4061 (-> khớp session broken_engulfing 26/6, win, xem sessions/2026-06-26_eg.yaml)."
+  - "26/6 10:44 — giá CHẠM vùng r_4083 rồi giảm sâu, xuống tới ~4000 (đúng hướng SELL của plan)."
+  - "Tiếp tục giảm xuyên 4000 (D1 demand major 4000-4060 BỊ PHÁ) xuống ~3971 (theo chart 7/1), sau đó hồi lại lên ~4026 (giá hiện tại theo TradingView)."
+

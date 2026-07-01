@@ -1,0 +1,44 @@
+# Daily Plan — XAUUSD — 01/07/2026
+# Nguồn: chart 1H gửi 12:22 (giá lúc đó 3971, đã giảm xuyên D1-demand-major 4000-4060).
+# Giá hiện tại (TradingView, lúc đọc inbox): ~4026 — đã hồi lại một phần.
+date: 2026-07-01
+symbol: XAUUSD
+source_tf: h1
+plan_issued: "2026-07-01 12:22"
+logged: "2026-07-01 (đọc inbox)"
+regime: trending_down
+htf_bias: bearish
+plan_bias: sell                 # vùng buy vẫn là REACTION ZONE, không đảo bias
+
+important_zones:
+  - id: r_4050
+    low: 4046
+    high: 4052
+    type: supply
+    note: "Band trên ảnh. Kịch bản (mũi tên): SELL tiếp từ đây xuống ~4020-4025."
+  - id: mid_4025
+    low: 4020
+    high: 4030
+    type: supply
+    note: "Band giữa. Giá HIỆN TẠI (~4026) đang nằm ngay trong band này -> vùng quyết định ngắn hạn."
+  - id: react_3960
+    low: 3958
+    high: 3962
+    type: demand
+    note: "'Nhịp gần nhất buy quanh 58-62' (lời user) — vùng dễ phản ứng gần nhất, KHÔNG phải đảo bias."
+  - id: react_3933
+    low: 3930
+    high: 3936
+    type: demand
+    note: "Demand sâu hơn trên chart. Kịch bản (mũi tên): nếu thủng 3960, có thể bật từ đây."
+
+my_view:
+  - "D1-demand-major (4000-4060) đã bị phá thủng (giá xuống ~3971) -> cấu trúc yếu hơn hẳn so với vài ngày trước. Bias sell càng có cơ sở."
+  - "Giá hiện ~4026 kẹt giữa mid_4025 (supply/kháng cự vừa retest) và r_4050 phía trên -> nếu bị từ chối tại đây, hướng chính vẫn là XUỐNG tiếp, target 3960 rồi 3933."
+  - "3960/3933 chỉ là vùng dễ phản ứng để scalp buy CÓ xác nhận (sweep+MSS), không phải tín hiệu đảo trend — đúng nguyên tắc đã thống nhất."
+  - "Cú hồi từ 3971 lên 4026 CẦN xác nhận thêm (M15/M5) mới biết là hồi kỹ thuật hay đảo tạm thời; không có xác nhận -> vẫn nghiêng sell theo HTF."
+
+unverifiable:
+  - "Chưa rõ giá đã ổn định trên 4000 hay đây là bull trap trước khi giảm tiếp — cần thêm dữ liệu M15 lúc giá phản ứng."
+
+confidence: derived_from_h1_chart_plus_live_quote
