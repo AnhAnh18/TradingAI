@@ -39,6 +39,8 @@ Không đoán bừa: **chờ giá tới zone rồi mới quyết định.**
 - Cụm đó **bị gãy** (giá phá xuống dưới) → đảo vai thành **KHÁNG CỰ** (breaker).
 - Vùng kháng cự = **cây nến đỏ** của cụm (2 line = low/high của nến đó).
 - Vùng **quá rộng** → tách 2 vùng con, canh phản ứng từng mức (vd 4046 & 4061).
+- **CHỈ đánh LẦN ĐẦU** giá chạm vùng + có phản ứng (bỏ các lần sau).
+- **TP ~20 giá** (scalp), chốt nhanh — KHÔNG gồng. Giá phá vùng SAU đó không liên quan (đã chốt).
 - Đánh dấu `broken_engulfing` trong plan/session để theo dõi winrate RIÊNG cho setup này.
 
 ## Risk & quản lý lệnh (ĐỀ XUẤT — sửa cho khớp bạn)

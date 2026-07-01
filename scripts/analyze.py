@@ -112,6 +112,7 @@ def main():
 
     breakdown(traded, "model", "entry model")
     breakdown(traded, "session", "phiên")
+    breakdown(traded, "setup", "setup")
 
     mistakes = Counter()
     for r in traded:

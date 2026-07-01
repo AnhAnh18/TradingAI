@@ -1,0 +1,22 @@
+# EG-resistance SELL — setup broken_engulfing. Đánh LẦN ĐẦU chạm 4061, TP ~20 giá.
+date: 2026-06-26
+session: ny_pm
+symbol: XAUUSD
+
+price_action:
+  reached_zone: r_4061          # EG-resistance (broken bullish EG, H2)
+  reaction: "wick lên 4066 rồi bị đẩy về ~4044 (lần ĐẦU chạm)"
+  mss: bearish
+
+entry:
+  model: breaker
+  zone: r_4061
+  direction: sell
+
+decision: sell
+result: tp1                     # WIN ~20 giá
+rr: null                        # ~20 giá; R chưa rõ -> điền sau
+setup: broken_engulfing         # DATA POINT thật đầu tiên cho setup này
+
+mistakes: []
+note: "Đánh LẦN ĐẦU chạm theo luật EG, TP ~20 giá. Giá sau đó phá lên 4088 nhưng KHÔNG ảnh hưởng vì đã chốt (rule: chỉ first touch, không gồng)."
