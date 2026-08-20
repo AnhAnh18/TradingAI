@@ -1,0 +1,10 @@
+BUY 70-72
+Buy 56-59
+
+SELL 27-30
+Sell 36-39
+
+Sell 4577-80
+
+
+Plan giá trị khi M30 không phá qua 55

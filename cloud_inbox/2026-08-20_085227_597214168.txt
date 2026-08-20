@@ -1,0 +1,10 @@
+Chỉ cho đọc vùng giá trị nhé. 
+
+Phải 55 là nơi quyết định ranh dưới giữa tăng và giảm không => Biểu hiện bởi 2 cây Doji XANH và ĐỎ, vùng râu trấn giữ
+
+Vậy giá đóng trên 55 => phe Buy chiếm ưu thế.
+
+Đóng dưới 55=> Phe Sell
+
+
+Cây W tuần này thì vẫn đang chạy (vẫn đang chạy trên 55)
