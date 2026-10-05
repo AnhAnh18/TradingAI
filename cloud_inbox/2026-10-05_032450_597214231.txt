@@ -1,0 +1,1 @@
+Lệnh này gồng tới 16h thôi nha. Để ý mốc 13-14h, nếu 13h phá 4160.xx thì sẽ là nhịp giảm từ 13h đến 14h rồi sau 14h tăng tiếp con nếu 13h k phá thì sẽ tiếp tục tăng đến 16h nha
