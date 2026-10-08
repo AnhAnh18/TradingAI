@@ -1,0 +1,1 @@
+điều kiện để cho giảm là 13h xác nhận đóng dưới 4119.xx thì lúc này xac nhận cho giảm luôn đến 16h để về vùng liên kết sóng tổng là 4095.xx - 4084.xx rồi sau 16h mới tăng lên đến 19h rồi 19h xác nhận đóng hoặc phá cản thì lúc này sẽ tiếp tục tăng đến 22h
